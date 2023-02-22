@@ -24,15 +24,23 @@ module.exports = () => {
         title: 'TODOs List'
       }),
 
-      new GenerateSW(),
+      new GenerateSW({
+        clientsClaim: true,
+        skipWaiting: false
+      }),
+      new InjectManifest({
+        swSrc: './src/js/src-sw.js',
+        swDest:'sw.js'
+      }),
       new WebpackPwaManifest({
-        name: 'Online Text Editor',
-        short_name: 'Web Editor',
+        name: 'JATE Online Text Editor',
+        short_name: 'JATE',
         description: 'Run a command line in your browser.',
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
         start_url: './',
         publicPath: './',
+        display: 'standalone',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
