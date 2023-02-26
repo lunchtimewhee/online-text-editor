@@ -9,7 +9,7 @@ const { GenerateSW } = require('workbox-webpack-plugin');
 
 module.exports = () => {
   return {
-    mode: 'production',
+    mode: 'development',
     devtool: 'source-map',
     entry: {
       main: './src/js/index.js',
@@ -18,7 +18,6 @@ module.exports = () => {
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: 'https://online-text-editor.herokuapp.com/'
     },
     plugins: [
       new HtmlWebpackPlugin({
