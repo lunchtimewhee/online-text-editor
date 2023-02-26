@@ -26,10 +26,10 @@ Heroku App Link: https://online-text-editor.herokuapp.com/
 
 ## Usage Information
 1. Press Install to install this as a PWA (Progressive Web App).
-![step1](./images/step1.jpg)
+!(./images/step1.JPG)
 
 2. You can then edit any part of the text editor and your progress will be saved.
-![step2](./images/step2.jpg)
+!(./images/step2.JPG)
 
 
 
