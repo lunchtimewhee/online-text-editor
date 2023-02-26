@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "",
     "start": "node server/server.js",
-    "heroku-postbuild":"cd client && webpack",
+    "heroku-postbuild":"cd client && npm install && npm run build",
     "server": "",
     "build": "",
     "install": "",
