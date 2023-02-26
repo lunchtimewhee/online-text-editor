@@ -18,12 +18,11 @@ module.exports = () => {
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: 'https://online-text-editor.herokuapp.com/'
+      publicPath: '/'
     },
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        publicPath:'https://online-text-editor.herokuapp.com/',
         title: 'JATE'
       }),
 
