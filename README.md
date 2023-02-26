@@ -3,6 +3,9 @@
 ## Description
 An online text editor. This is a PWA and can be installed in your browser.
 
+Github Link: https://github.com/lunchtimewhee/online-text-editor
+Heroku App Link: https://online-text-editor.herokuapp.com/
+
 ## Table of Contents
  - [Online Text Editor](#online-text-editor)
  - [Description](#description)
@@ -15,7 +18,7 @@ An online text editor. This is a PWA and can be installed in your browser.
 
 
 ## Questions?
-- Github: https://github.com/ 
+- Github: https://github.com/lunchtimewhee 
 - Email: anthonyrli1994@gmail.com
 
 ## Installation Instructions
@@ -23,8 +26,10 @@ An online text editor. This is a PWA and can be installed in your browser.
 
 ## Usage Information
 1. Press Install to install this as a PWA (Progressive Web App).
+![step1](./images/step1.jpg)
 
 2. You can then edit any part of the text editor and your progress will be saved.
+![step2](./images/step2.jpg)
 
 
 
