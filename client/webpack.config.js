@@ -23,6 +23,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
+        publicPath:'https://online-text-editor.herokuapp.com/',
         title: 'JATE'
       }),
 
@@ -41,7 +42,7 @@ module.exports = () => {
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
         start_url: './',
-        publicPath: './',
+        publicPath: 'https://online-text-editor.herokuapp.com/',
         display: 'standalone',
         icons: [
           {
