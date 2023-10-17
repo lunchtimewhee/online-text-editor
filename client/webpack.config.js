@@ -16,7 +16,7 @@ module.exports = () => {
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: 'https://https://online-text-editor-a-038c16aeafb1.herokuapp.com/dist/'
+      publicPath: 'https://online-text-editor-a-038c16aeafb1.herokuapp.com/dist/'
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -39,7 +39,7 @@ module.exports = () => {
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
         start_url: './',
-        publicPath: 'https://https://online-text-editor-a-038c16aeafb1.herokuapp.com/',
+        publicPath: 'https://online-text-editor-a-038c16aeafb1.herokuapp.com/',
         display: 'standalone',
         icons: [
           {
