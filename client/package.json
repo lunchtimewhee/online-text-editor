@@ -3,7 +3,6 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
-    "postbuild": "cp -r dist/* .",
     "start": "webpack --watch"
   },
   "author": "2U",
