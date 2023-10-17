@@ -16,7 +16,7 @@ module.exports = () => {
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: 'https://mysterious-anchorage-23843-14642d4ad6aa.herokuapp.com/dist/'
+      publicPath: 'https://mysterious-anchorage-23843-14642d4ad6aa.herokuapp.com/client/dist/'
     },
     plugins: [
       new HtmlWebpackPlugin({
