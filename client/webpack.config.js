@@ -16,7 +16,7 @@ module.exports = () => {
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: 'https://https://online-text-editor-a-038c16aeafb1.herokuapp.com//dist/'
+      publicPath: 'https://https://online-text-editor-a-038c16aeafb1.herokuapp.com/dist/'
     },
     plugins: [
       new HtmlWebpackPlugin({
