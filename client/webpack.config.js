@@ -4,8 +4,6 @@ const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 const { GenerateSW } = require('workbox-webpack-plugin');
 
-// TODO: Add and configure workbox plugins for a service worker and manifest file.
-// TODO: Add CSS loaders and babel to webpack.
 
 module.exports = () => {
   return {
@@ -18,7 +16,7 @@ module.exports = () => {
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: 'https://online-text-editor.herokuapp.com/dist/'
+      publicPath: 'https://https://online-text-editor-a-038c16aeafb1.herokuapp.com//dist/'
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -41,7 +39,7 @@ module.exports = () => {
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
         start_url: './',
-        publicPath: 'https://online-text-editor.herokuapp.com/',
+        publicPath: 'https://https://online-text-editor-a-038c16aeafb1.herokuapp.com//',
         display: 'standalone',
         icons: [
           {
