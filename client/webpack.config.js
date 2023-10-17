@@ -39,7 +39,7 @@ module.exports = () => {
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
         start_url: './',
-        publicPath: 'https://mysterious-anchorage-23843-14642d4ad6aa.herokuapp.com/',
+        publicPath: 'https://mysterious-anchorage-23843-14642d4ad6aa.herokuapp.com/dist',
         display: 'standalone',
         icons: [
           {
