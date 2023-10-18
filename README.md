@@ -22,7 +22,7 @@ Heroku App Link: [https://online-text-editor.herokuapp.com/](https://mysterious-
 - Email: anthonyrli1994@gmail.com
 
 ## Installation Instructions
-1. Go to https://online-text-editor.herokuapp.com/
+1. Go to [https://online-text-editor.herokuapp.com/](https://mysterious-anchorage-23843-14642d4ad6aa.herokuapp.com/)
 
 ## Usage Information
 1. Press Install to install this as a PWA (Progressive Web App).
