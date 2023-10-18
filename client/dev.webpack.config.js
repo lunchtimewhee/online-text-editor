@@ -28,7 +28,7 @@ module.exports = () => {
         skipWaiting: false
       }),
       new InjectManifest({
-        swSrc: './src/js/src-sw.js',
+        swSrc: './src/src-sw.js',
         swDest:'sw.js'
       }),
       new WebpackPwaManifest({
