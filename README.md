@@ -4,7 +4,7 @@
 An online text editor. This is a PWA and can be installed in your browser.
 
 Github Link: https://github.com/lunchtimewhee/online-text-editor
-Heroku App Link: [https://online-text-editor.herokuapp.com/](https://mysterious-anchorage-23843-14642d4ad6aa.herokuapp.com/)
+Heroku App Link: [https://mysterious-anchorage-23843-14642d4ad6aa.herokuapp.com/](https://mysterious-anchorage-23843-14642d4ad6aa.herokuapp.com/)
 
 ## Table of Contents
  - [Online Text Editor](#online-text-editor)
@@ -22,7 +22,7 @@ Heroku App Link: [https://online-text-editor.herokuapp.com/](https://mysterious-
 - Email: anthonyrli1994@gmail.com
 
 ## Installation Instructions
-1. Go to [https://online-text-editor.herokuapp.com/](https://mysterious-anchorage-23843-14642d4ad6aa.herokuapp.com/)
+1. Go to [https://mysterious-anchorage-23843-14642d4ad6aa.herokuapp.com/](https://mysterious-anchorage-23843-14642d4ad6aa.herokuapp.com/)
 
 ## Usage Information
 1. Press Install to install this as a PWA (Progressive Web App).
