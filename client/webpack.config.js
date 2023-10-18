@@ -2,13 +2,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
-const { GenerateSW } = require('workbox-webpack-plugin');
-
 
 module.exports = () => {
   return {
-    mode: 'production',
-    devtool: 'source-map',
+    mode: 'development',
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
@@ -16,43 +13,33 @@ module.exports = () => {
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      //publicPath: '/'
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './index.html',
-        title: 'JATE'
+        template: "./index.html",
+        title: "JATE",
       }),
-
-      new GenerateSW({
-        clientsClaim: true,
-        skipWaiting: false
-      }),
+      // injects our custom service work from src-sw.js
       new InjectManifest({
-        swSrc: './src/js/src-sw.js',
-        swDest:'sw.js'
+        swSrc: "./src-sw.js",
+        swDest: "src-sw.js",
       }),
+      // creates a manifest.json file
       new WebpackPwaManifest({
-        name: 'JATE Online Text Editor',
-        short_name: 'JATE',
-        description: 'Run a command line in your browser.',
-        background_color: '#7eb4e2',
-        theme_color: '#7eb4e2',
-        start_url: './',
-        //publicPath: '/',
-        display: 'standalone',
+        fingerprints: false,
+        inject: true,
+        name: "Just Another Text Editor",
+        short_name: "JATE",
+        description: "Text Editor with offline capabilities using IndexedDB",
+        background_color: "#225ca3",
+        theme_color: "#225ca3",
+        start_url: "/",
+        publicPath: "/",
         icons: [
           {
-            src: path.resolve('src/images/logo.png'),
-            sizes: [96, 128, 192, 256, 384, 512],
-            destination: path.join('assets', 'icons'),
-            type: 'image/png',
-          },
-          {
-            src: path.resolve('src/images/logo.png'),
-            sizes: [96, 128, 192, 256, 384, 512],
-            destination: path.join('assets', 'icons'),
-            type: 'image/png',
+            src: path.resolve("src/images/logo.png"),
+            sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+            destination: path.join("assets", "icons"),
           },
         ],
       }),
@@ -61,23 +48,24 @@ module.exports = () => {
     module: {
       rules: [
         {
-          test: /\.css$/i,
-          use: [
-            'style-loader',
-            'css-loader',
-        ]
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
-            loader: 'babel-loader',
+            loader: "babel-loader",
             options: {
-              presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
-            }
-          }
+              presets: ["@babel/preset-env"],
+              plugins: [
+                "@babel/plugin-proposal-object-rest-spread",
+                "@babel/transform-runtime",
+              ],
+            },
+          },
         }
+        
       ],
     },
   };
